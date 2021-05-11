@@ -1,0 +1,294 @@
+html, body{
+ 
+}
+
+[data-scroll-content] {
+}
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  font-family: "Varela Round","Poppins", sans-serif;
+  background:#fff;
+  color:#000;
+}
+body { 
+	animation: fadeInAnimation ease 2s;
+	animation-iteration-count: 1; 
+	animation-fill-mode: forwards;
+  
+} 
+
+@keyframes fadeInAnimation { 
+	0% { 
+		opacity: 0; 
+	} 
+	100% { 
+		opacity: 1; 
+	} 
+} 
+.container{
+  border-box: box-sizing;
+  display: flex;
+  flex-direction: column;
+}
+#cart-div{
+  display:flex;
+  flex-direction: row;
+}
+#cart{
+  font-weight:400;
+  text-align: center;
+  padding:5px;
+  font-size:16px;
+}
+#number{
+  text-align: center;
+  padding:5px;
+  padding-top:1px;
+  margin-top:6px;
+  margin-bottom:8px;
+  font-size:17px;
+  margin-left:4px;
+  background: #ececec;
+  border-radius: 54%;
+  height:50%;
+}
+.logo img{
+  height:70px;
+}
+.logo h1{
+  font-family:"cookie", cookie;
+  font-weight:normal;
+  font-size: 40px;
+  text-align: center;  
+  padding:10px;
+  padding-top:15px;
+}
+.logo hr{
+  opacity: 0.4;
+  margin-bottom: 40px;
+  color: pink;
+  border: 1px solid pink;
+}
+#nav-class{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+}
+#parent-img{
+  position: relative;
+}
+#header-img{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  padding:10px;
+  padding-top:0px;
+}
+#header-img:hover{
+  animation-name: zoom;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes zoom{
+  50%{
+    width:49px;
+  }
+  100%{
+    width:52px;
+
+  }
+}
+
+#nav{
+  margin-left:250px;
+  margin-right:250px;
+  display:flex;
+  flex-direction:row;
+}
+li{
+  list-style: none;
+  font-size: 20px;
+  padding:5px;
+  padding-right:5px;
+  margin-right: 14px;
+  padding-left:5px;
+}
+nav > ul{
+  width: 0vw;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+}
+
+/* #test p {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+ */
+
+
+li > span{
+  cursor:pointer;
+  font-size:20px;
+}
+li > hr {
+  opacity:0;
+  transition: width 0.7s ease-in;
+  width:0%;
+  float:right;
+  border-style: none;
+  background: #000;
+  height: 2px;
+  margin:0;
+  -webkit-transition: all 1s ease; 
+	-moz-transition: all 1s ease; 
+	-o-transition: all 1s ease; 
+	-ms-transition: all 1s ease; 
+	transition: all 1s ease; 
+}
+li:hover > hr {
+  opacity:1;
+  width:100%;
+  float:left;
+}
+
+
+/* cart underline animation */
+.underline-animation > span{
+  cursor:pointer;
+  font-size:20px;
+}
+.underline-animation > hr {
+  opacity:0;
+  transition: width 0.5s ease-in;
+  width:0%;
+  float:right;
+  border-style: none;
+  background: #000;
+  height: 2px;
+  margin:0;
+  -webkit-transition: all 1s ease; 
+	-moz-transition: all 1s ease; 
+	-o-transition: all 1s ease; 
+	-ms-transition: all 1s ease; 
+	transition: all 1s ease; 
+}
+.underline-animation:hover > hr {
+  opacity:1;
+  width:100%;
+  float:left;
+}
+
+/* animation2
+ */
+
+.underline-animation2 > span{
+  cursor:pointer;
+  font-size:20px;
+}
+.underline-animation2 > hr {
+  opacity:1;
+  transition: width 0.5s ease-in;
+  width:100%;
+  float:left;
+  border-style: none;
+  background: #000;
+  height: 2px;
+  margin:0;
+  -webkit-transition: all 1s ease; 
+	-moz-transition: all 1s ease; 
+	-o-transition: all 1s ease; 
+	-ms-transition: all 1s ease; 
+	transition: all 1s ease; 
+}
+.underline-animation2:hover > hr {
+  opacity:1;
+  width:0%;
+  float:right;
+}
+/* end of cart animation */
+
+
+
+
+#container2{
+  margin-top:80px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+#content1 {
+  margin-left: 220px;
+  margin-top: 30px;
+}
+#content1First{
+  font-size: 38px;
+  font-weight:800px;
+}
+#content1First span{
+  color:pink;
+}
+#content1Second{
+  margin-top: 75px;
+  font-size: 25px;
+}
+#h2{
+  font-weight: normal;
+  font-weight: 400px;
+  display: inline-block;
+}
+#imaged{
+  width: 625px;
+  height:auto;
+  display: block;
+  
+}
+#content2{
+  margin-top:10px;
+  margin-right:0px;
+  padding-right:0px;
+  display-block;
+}
+
+#image-container{
+  position: relative;
+  height: 1400px;
+}
+#image3{
+  position: absolute;
+  display: block;
+  top:-20px;
+}
+#image3 img{
+  width: 110%;
+  height:auto;
+  display: block;
+}
